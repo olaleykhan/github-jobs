@@ -1,0 +1,40 @@
+/* *****************************The following style the prt for job listings */
+
+.company-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    object-fit: scale-down;
+    /* bottom: 50%; */
+    bottom: 45px;
+    padding: 5px;
+    background-color: #ffffff;
+  }
+
+  .dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--grey);
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .job-box{
+    background-color: var(--white);
+    border-radius: 5px;
+    width: 95%;
+    min-height: 350px;
+  }
+
+  .job-details{
+    
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

@@ -1,0 +1,46 @@
+
+
+
+
+#job-detail ul {
+    list-style: none; 
+  }
+  
+  #job-detail ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--light-violet);
+    font-weight: bold;
+    display: inline-block;
+    width: 2em; 
+    margin-left: -2em; 
+  }
+
+  .apply{
+      color: var(--white);
+      background: url(../../assets/desktop/bg-pattern-detail-footer.svg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+       border-radius: 8px;
+
+  }
+
+  .apply a {
+      color: var(--white);
+      font-weight: 600;
+  }
+
+
+  .details-footer{
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+  }
+
+  footer{
+      
+    background-color: var(--white);
+
+  }

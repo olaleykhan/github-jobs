@@ -1,0 +1,62 @@
+/* This styles the top bar */
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+  
+  
+  
+  /* The following code styles the input bars on the top part of the page */
+
+  .input-bars{
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .input-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    height: 10vh;
+    /* bottom: -10vh; */
+  }
+  
+  .input-form #search-bar, .input-form #filter-bar{
+    width: 100%;
+    /* position: absolute; */
+    /* left: 0; */
+    width: 300px;
+    border: none;
+    outline: none;
+    height: 10vh;
+    /* border-radius: 5px; */
+
+  }
+
+   .input-form #search-bar:-internal-autofill-selected{
+      background-color: black !important;
+
+    }
+
+  .input-form #filter-bar{
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    /* height: 10vh; */
+    max-width: 250px;
+
+  }
+
+
+  /* styles the checkbox in the serch input */
+
+  #my-checkbox{
+      /* background-color: red; */
+      min-width: 100px;
+      color: black !important ;
+      font-weight: 800;
+  }
