@@ -27,7 +27,7 @@
   }
   
   .input-form #search-bar, .input-form #filter-bar{
-    width: 100%;
+    /* width: 100%; */
     /* position: absolute; */
     /* left: 0; */
     width: 300px;
@@ -47,7 +47,7 @@
     border-left: 1px solid var(--grey);
     border-right: 1px solid var(--grey);
     /* height: 10vh; */
-    max-width: 250px;
+    /* max-width: 250px; */
 
   }
 
@@ -60,3 +60,13 @@
       color: black !important ;
       font-weight: 800;
   }
+
+
+  @media only screen and (max-width: 800px) {
+    .input-form{
+      flex-direction: column;
+      margin-bottom: 150px;
+    }
+
+  }
+  

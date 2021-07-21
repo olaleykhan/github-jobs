@@ -22,10 +22,16 @@ class JobsList extends React.Component{
     }
 
     renderEachJob=(jobsList)=>{
-        return jobsList.map(job=>{
+        if(jobsList.length>1) return jobsList.map(job=>{
             return( <SingleJobDisplay key={job.id} jobData={job}/>
             )
         })
+
+        return <div>
+            <h1> Error:</h1>
+            <h3 style={{color:"red"}}> "GitHub Jobs is deprecated! New jobs will not be posted from May 19, 2021. It will shut down entirely on August 19, 2021. Read more in: https://github.blog/changelog/2021-04-19-deprecation-notice-github-jobs-site/</h3>
+        </div>
+
 
     }
     render(){
@@ -52,7 +58,7 @@ class JobsList extends React.Component{
 //   };
 
   const mapStateToProps=(state)=>{
-    // console.log(state.form.searchBar.registeredFields);
+    console.log(state);
     
     return {searchParam: state.form.searchBar,
             jobsData:state.jobsData
